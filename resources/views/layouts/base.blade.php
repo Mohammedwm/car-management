@@ -67,17 +67,30 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview menu-open">
-            <a href="#" class="nav-link active">
-              <i class="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-
+          <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-home nav-icon"></i>
+              <p>الرئيسية</p>
+              </a>
           </li>
-         
+         <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-people-carry nav-icon"></i>
+              <p>التجار</p>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-user-cog nav-icon"></i>
+              <p>ورشات الصبانة</p>
+              </a>
+          </li>
+          <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="fas fa-cogs nav-icon"></i>
+              <p>قطع الغيار</p>
+              </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
@@ -92,12 +105,7 @@
     <section class="content">
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
-        1
-        <!-- Main row -->
-        <div class="row">
-        2
-        </div>
-        <!-- /.row (main row) -->
+        {{ $slot }}
       </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
